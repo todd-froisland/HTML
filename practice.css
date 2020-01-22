@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /*good practice to use this. Makes a content boxe
+  match the actual size measured by the pixels*/
+}/*resets the default box behavior */
+
+
+/*these divs are all contained with a parent container (div class 'page') and
+will only adjust within the website space taken by this parent container*/
+.menu {
+  height: 100px;
+  background-color: #B2D6FF;    /* Medium blue */
+}
+
+.sidebar { /*use a period when referring to a class*/
+  float: left; /*allows you to align boxes next to each other on a website
+  can float left, right and middle*/
+   width: 200px;
+  height: 300px;
+  background-color: #F09A9D;    /* Red */
+}
+
+.content {
+  float: left;
+  height: 500px;
+  width: 650px;
+  background-color: #F5CF8E;    /* Yellow */
+}
+
+.footer {
+  clear: both; /*if using floats, use this to make footer drop to bottom of page*/
+  height: 200px;
+  background-color: #D6E9FE;    /* Light blue */
+}
+.page {
+  background-color: #EAEDF0;
+  overflow: hidden;
+  width: 900px;
+  margin: 0 auto;
+}
