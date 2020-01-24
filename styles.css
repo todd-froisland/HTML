@@ -1,56 +1,84 @@
-
-body {
-  text-align: left;
-  background-color: ##668C32;
-}
-
-.statement {
-  font-family: "helvetica", sans-serif;
-  background-color: #89C628;
-  color: #FFC300;
-  box-sizing: border-box;
-  padding: 50px;
-}
-
-h1 {
-  background-color: #FFC300;
-  font-color: #C70039;
-  font-family: "helvetica", sans-serif;
-
-}
-
-.menu a:link {
-  font-color: #FFC300;
-}
-.menu a:visited {
-  font-color: #FF5733;
-}
-
-#special_paragraph {
-  color: blue;
-}
-.menu ul {
-  list-style-type: none;
-  width: 100%;
-  margin-bottom: 10px;;
+* {
   padding: 0;
-  overflow: hidden;
-  background-color: #ABEBC6;
+  margin: 0;
+  box-sizing: border-box; /* always include to make sure boxes
+  are sized correctly*/
+  .page {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
+.menu-container {
+  padding: 5px ;
+  background-color: #505050;
+  display: flex;
+  justify-content: space-between;
+  color: white;
 
-.menu li {
-  float: left;
 }
-
-.menu li a {
-  display: block;
-  color: #A427D6;
+.menu {
+  font-family: "calibri";
+  font-size: 14px;
+  width: 200px;
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
   text-align: center;
-  padding: 14px 16px;
+  padding: 20px 0 0 20px;
+}
+a:link {
+  display: flex;
+  color: white;
   text-decoration: none;
 }
+a:visited {
+  color: white;
+}
 
-/* Change the link color to #111 (black) on hover */
-.menu li a:hover {
-  background-color: #C39BD3;
+
+.name {
+  padding: 20px;
+  display: flex;
+  justify-content: ceneter;
+  font-size: 16px;
+  font-family: "calibri";
+  list-style-type: none;
+  color: white;
+}
+.content-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.content {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.content-item {
+  padding: 2px;
+  display: flex;
+  background-color: #white;
+}
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  body {
+    background-color: #F09A9D; /* Red */
+  }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  body {
+    background-color: #F5CF8E; /* Yellow */
+  }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  body {
+    background-color: #B2D6FF; /* Blue */
+  }
 }
